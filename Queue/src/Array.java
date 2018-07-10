@@ -50,15 +50,6 @@ public class Array<E> {
     }
 
     /**
-     * 向所有元素后添加一个元素
-     *
-     * @param e
-     */
-    public void addLast(E e) {
-        add(size, e);
-    }
-
-    /**
      * 向index位置添加元素
      *
      * @param index
@@ -77,6 +68,15 @@ public class Array<E> {
         }
         data[index] = e;
         size++;
+    }
+
+    /**
+     * 向所有元素后添加一个元素
+     *
+     * @param e
+     */
+    public void addLast(E e) {
+        add(size,e );
     }
 
     private void resize(int newCapacity) {
